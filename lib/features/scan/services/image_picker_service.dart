@@ -6,28 +6,37 @@ class ImagePickerService {
   final ImagePicker _picker = ImagePicker();
 
   Future<File?> pickFromCamera() async {
-    final image = await _picker.pickImage(
-      source: ImageSource.camera,
-      imageQuality: 90,
-    );
+    try {
+      final image = await _picker.pickImage(
+        source: ImageSource.camera,
+        imageQuality: 90,
+        preferredCameraDevice: CameraDevice.rear,
+      );
 
-    if (image == null) {
+      if (image == null) {
+        return null;
+      }
+
+      return File(image.path);
+    } catch (_) {
       return null;
     }
-
-    return File(image.path);
   }
 
   Future<File?> pickFromGallery() async {
-    final image = await _picker.pickImage(
-      source: ImageSource.gallery,
-      imageQuality: 90,
-    );
+    try {
+      final image = await _picker.pickImage(
+        source: ImageSource.gallery,
+        imageQuality: 90,
+      );
 
-    if (image == null) {
+      if (image == null) {
+        return null;
+      }
+
+      return File(image.path);
+    } catch (_) {
       return null;
     }
-
-    return File(image.path);
   }
 }

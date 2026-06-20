@@ -194,7 +194,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
               ),
 
               Positioned(
-                bottom: 27,
+                bottom: 30,
                 left: 0,
                 right: 0,
                 child: Center(
@@ -206,7 +206,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
                         width: size.width * .72,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 20,
-                          vertical: 18,
+                          vertical: 16,
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(28),

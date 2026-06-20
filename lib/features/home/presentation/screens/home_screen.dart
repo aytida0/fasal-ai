@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
             child: SizedBox(
               height:
                   screenHeight * 0.44 +
-                  90,
+                  60,
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                     child: Transform.translate(
                       offset: const Offset(
                         0,
-                        20,
+                        5,
                       ),
                       child:
                           const HomeStatsRow(),
