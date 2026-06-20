@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -128,6 +129,7 @@ class DiagnosisHistorySection extends ConsumerWidget {
                 children:
                     latest.map((item) {
                   return GlassCard(
+                    blur: 14,
                     margin:
                         const EdgeInsets.only(
                       bottom: 12,
@@ -158,28 +160,36 @@ class DiagnosisHistorySection extends ConsumerWidget {
                           vertical: 8,
                         ),
 
-                        leading:
-                            CircleAvatar(
-                          backgroundColor:
-                              item.isHealthy
-                                  ? Colors
-                                      .green
-                                      .shade50
-                                  : Colors
-                                      .orange
-                                      .shade50,
-                          child: Icon(
-                            item.isHealthy
-                                ? Icons
-                                    .check_circle
-                                : Icons
-                                    .warning,
-                            color:
-                                item.isHealthy
-                                    ? Colors
-                                        .green
-                                    : Colors
-                                        .orange,
+                        leading: Container(
+                          width: 56,
+                          height: 56,
+                          padding: const EdgeInsets.all(2.5),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: item.isHealthy
+                                  ? const Color(0xFF16A34A)
+                                  : const Color(0xFFDC2626),
+                              width: 2.5,
+                            ),
+                          ),
+                          child: ClipOval(
+                            child: File(item.imagePath).existsSync()
+                                ? Image.file(
+                                    File(item.imagePath),
+                                    fit: BoxFit.cover,
+                                  )
+                                : Container(
+                                    color: Colors.grey.shade200,
+                                    child: Icon(
+                                      item.isHealthy
+                                          ? Icons.eco_rounded
+                                          : Icons.bug_report_rounded,
+                                      color: item.isHealthy
+                                          ? const Color(0xFF16A34A)
+                                          : const Color(0xFFDC2626),
+                                    ),
+                                  ),
                           ),
                         ),
 
@@ -195,8 +205,13 @@ class DiagnosisHistorySection extends ConsumerWidget {
                             Text(
                               item.isHealthy
                                   ? 'Healthy Crop'
-                                  : item.diseaseName ??
-                                      '',
+                                  : item.diseaseName ?? '',
+                              style: TextStyle(
+                                color: item.isHealthy
+                                    ? const Color(0xFF15803D)
+                                    : const Color(0xFFB91C1C),
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                             Text(
                               DateFormatter

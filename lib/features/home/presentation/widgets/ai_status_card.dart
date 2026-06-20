@@ -5,50 +5,91 @@ class AIStatusCard extends StatelessWidget {
   const AIStatusCard({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(24),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(
-            sigmaX: 12,
-            sigmaY: 12,
+Widget build(BuildContext context) {
+  return Center(
+    child: Container(
+      width: MediaQuery.of(context).size.width * .78,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(22),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [const Color(0xFF111111), const Color(0xFF1E1E1E)],
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF00A152).withValues(alpha: .10),
+            blurRadius: 24,
+            spreadRadius: 1,
+            offset: const Offset(0, 8),
           ),
-          child: Container(
-            width: MediaQuery.of(context).size.width * .67,
-            margin: const EdgeInsets.only(top: 4),
-            padding: const EdgeInsets.symmetric(
-              horizontal: 15,
-              vertical: 8,
-            ),
+        ],
+        border: Border.all(color: Colors.white.withValues(alpha: .05)),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 42,
+            height: 42,
             decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: 0.8),
-              borderRadius: BorderRadius.circular(24),
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.10),
-                width: 0.8,
+              borderRadius: BorderRadius.circular(14),
+              gradient: LinearGradient(
+                colors: [const Color(0xFF18B562), const Color(0xFF00A152)],
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: .12),
-                  blurRadius: 16,
-                  offset: const Offset(0, 4),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                'assets/images/crop_ai.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          const SizedBox(width: 14),
+          const Expanded(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Crop Model Ready',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(height: 2),
+                Text(
+                  'Offline crop analysis available',
+                  style: TextStyle(
+                    color: Colors.white54,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ],
             ),
-            child: const Text(
-              'Crop Model mobilenetv1 is active',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color.fromARGB(223, 255, 255, 255),
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-                letterSpacing: -0.1,
-              ),
+          ),
+          Container(
+            width: 10,
+            height: 10,
+            decoration: BoxDecoration(
+              color: const Color(0xFF18B562),
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFF18B562).withValues(alpha: .6),
+                  blurRadius: 10,
+                ),
+              ],
             ),
           ),
-        ),
+        ],
       ),
-    );
-  }
+    ),
+  );
+}
+
 }
