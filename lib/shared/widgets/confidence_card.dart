@@ -28,12 +28,12 @@ class ConfidenceCard extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: confidenceColor.withOpacity(.12),
+          color: confidenceColor.withValues(alpha: .12),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: confidenceColor.withOpacity(.08),
+            color: confidenceColor.withValues(alpha: .08),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),

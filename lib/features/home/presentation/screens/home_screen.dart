@@ -24,8 +24,8 @@ class HomeScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: SizedBox(
               height:
-                  screenHeight * 0.44 +
-                  60,
+                  screenHeight * 0.45 +
+                  52,
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [

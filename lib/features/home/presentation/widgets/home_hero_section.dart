@@ -17,31 +17,48 @@ class HomeHeroSection extends ConsumerStatefulWidget {
   ConsumerState<HomeHeroSection> createState() => _HomeHeroSectionState();
 }
 
-class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
+class _HomeHeroSectionState extends ConsumerState<HomeHeroSection>
+    with SingleTickerProviderStateMixin {
   StreamSubscription? _sensorSubscription;
 
-  double _dx = 0;
-  double _dy = 0;
+  late final AnimationController _parallaxController;
+
+  final ValueNotifier<Offset> _imageOffset =
+      ValueNotifier(Offset.zero);
+
+  Offset _targetOffset = Offset.zero;
 
   @override
   void initState() {
     super.initState();
+    _parallaxController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )
+      ..addListener(() {
+        final current = _imageOffset.value;
+        _imageOffset.value = Offset(
+          current.dx + (_targetOffset.dx - current.dx) * 0.11,
+          current.dy + (_targetOffset.dy - current.dy) * 0.11,
+        );
+      })
+      ..repeat();
 
     _sensorSubscription = accelerometerEventStream().listen((event) {
       if (!mounted) {
         return;
       }
-
-      setState(() {
-        _dx = (-event.x * 1.5).clamp(-12.0, 12.0);
-
-        _dy = (event.y * 1.2).clamp(-8.0, 8.0);
-      });
+      _targetOffset = Offset(
+        (-event.x * 3.2).clamp(-22.0, 22.0),
+        (event.y * 1.2).clamp(-8.0, 8.0),
+      );
     });
   }
 
   @override
   void dispose() {
+    _parallaxController.dispose();
+    _imageOffset.dispose();
     _sensorSubscription?.cancel();
     super.dispose();
   }
@@ -66,7 +83,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
 
     final size = MediaQuery.of(context).size;
 
-    final heroHeight = size.height * 0.44;
+    final heroHeight = size.height * 0.45;
 
     return profile.when(
       loading: () => SizedBox(height: heroHeight),
@@ -80,11 +97,20 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
           child: Stack(
             children: [
               Positioned.fill(
-                child: Transform.translate(
-                  offset: Offset(_dx, _dy - 20),
+                child: ValueListenableBuilder<Offset>(
+                  valueListenable: _imageOffset,
+                  builder: (_, offset, child) {
+                    return Transform.translate(
+                      offset: Offset(
+                        offset.dx,
+                        offset.dy - 10,
+                      ),
+                      child: child,
+                    );
+                  },
                   child: OverflowBox(
-                    maxWidth: size.width + 60,
-                    maxHeight: heroHeight + 60,
+                    maxWidth: size.width + 100,
+                    maxHeight: heroHeight + 120,
                     child: Image.asset(
                       'assets/images/crop_hero.png',
                       fit: BoxFit.cover,
@@ -93,37 +119,43 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
                 ),
               ),
 
-              Positioned.fill(
-                child: Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        Colors.black.withValues(alpha: .02),
-                        Colors.black.withValues(alpha: .05),
-                        Colors.white.withValues(alpha: .08),
-                        Colors.white.withValues(alpha: .18),
-                        Colors.white.withValues(alpha: .45),
-                        const Color(0xFFF5F8F4),
-                      ],
-                      stops: const [
-                        .60,
-                        .75,
-                        .84,
-                        .90,
-                        .95,
-                        .985,
-                        1,
-                      ],
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: -90,
+                height: heroHeight * .55,
+                child: IgnorePointer(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.transparent,
+                          Colors.white.withValues(alpha: .05),
+                          Colors.white.withValues(alpha: .14),
+                          Colors.white.withValues(alpha: .32),
+                          Colors.white.withValues(alpha: .60),
+                          Colors.white.withValues(alpha: .88),
+                          const Color(0xFFF5F8F4),
+                        ],
+                        stops: const [
+                          0.0,
+                          .25,
+                          .45,
+                          .65,
+                          .82,
+                          .94,
+                          1,
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
 
               Positioned(
-                top: MediaQuery.of(context).padding.top - 15,
+                top: MediaQuery.of(context).padding.top - 5,
                 left: 10,
                 child: GlassCard(
                   blur: 14,
@@ -156,7 +188,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
               ),
 
               Positioned(
-                top: MediaQuery.of(context).padding.top - 15,
+                top: MediaQuery.of(context).padding.top - 5,
                 right: 10,
                 child: GestureDetector(
                   onTap: () {
@@ -170,12 +202,11 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
                       backgroundColor: Colors.white.withValues(alpha: .15),
                       backgroundImage:
                           user?.imagePath != null &&
-                                  File(user!.imagePath!).existsSync()
-                              ? FileImage(
-                                  File(user.imagePath!),
-                                )
-                              : null,
-                      child: user?.imagePath == null ||
+                              File(user!.imagePath!).existsSync()
+                          ? FileImage(File(user.imagePath!))
+                          : null,
+                      child:
+                          user?.imagePath == null ||
                               !File(user?.imagePath ?? '').existsSync()
                           ? Text(
                               (user?.name.isNotEmpty ?? false)
@@ -194,7 +225,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
               ),
 
               Positioned(
-                bottom: 30,
+                bottom: 37,
                 left: 0,
                 right: 0,
                 child: Center(
@@ -206,7 +237,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
                         width: size.width * .72,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 20,
-                          vertical: 16,
+                          vertical: 13,
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(28),
@@ -229,12 +260,12 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection> {
                               ),
                             ),
 
-                            const SizedBox(height: 16),
+                            const SizedBox(height: 7),
 
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 14,
-                                vertical: 8,
+                                vertical: 6,
                               ),
                               decoration: BoxDecoration(
                                 color: Colors.white.withValues(alpha: .15),
