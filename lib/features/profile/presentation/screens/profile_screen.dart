@@ -52,6 +52,7 @@ class ProfileScreen extends ConsumerWidget {
     final profile = ref.watch(profileProvider);
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: profile.when(
           loading: () => const Center(child: CircularProgressIndicator()),
@@ -80,13 +81,15 @@ class ProfileScreen extends ConsumerWidget {
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
+                            color: const Color(0xFFFAFAFA),
                             border: Border.all(
-                              color: const Color(0xFF1B5E20),
-                              width: 4,
+                              color: const Color.fromARGB(255, 27, 169, 79),
+                              width: 5,
                             ),
                           ),
                           child: CircleAvatar(
                             radius: 58,
+                            backgroundColor: const Color.fromARGB(255, 231, 231, 231),
                             backgroundImage:
                                 user.imagePath != null &&
                                     File(user.imagePath!).existsSync()
@@ -96,7 +99,8 @@ class ProfileScreen extends ConsumerWidget {
                                 ? Text(
                                     user.name.substring(0, 1).toUpperCase(),
                                     style: const TextStyle(
-                                      fontSize: 34,
+                                      color: Colors.black,
+                                      fontSize: 40,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   )
@@ -106,8 +110,8 @@ class ProfileScreen extends ConsumerWidget {
                       ),
 
                       Positioned(
-                        right: -2,
-                        bottom: -2,
+                        right: 2,
+                        bottom: 2,
                         child: GestureDetector(
                           onTap: () {
                             _pickProfileImage(context, ref);
@@ -116,9 +120,12 @@ class ProfileScreen extends ConsumerWidget {
                             width: 38,
                             height: 38,
                             decoration: BoxDecoration(
-                              color: Theme.of(context).colorScheme.primary,
+                              color: const Color.fromARGB(255, 27, 169, 79),
                               shape: BoxShape.circle,
-                              border: Border.all(color: Colors.white, width: 2),
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             child: const Icon(
                               Icons.edit,
@@ -135,11 +142,14 @@ class ProfileScreen extends ConsumerWidget {
 
                   Text(
                     user.name,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: Theme.of(context)
+                        .textTheme
+                        .headlineMedium
+                        ?.copyWith(
+                          color: const Color(0xFF15803D),
+                          fontWeight: FontWeight.w800,
+                          fontSize: 32,
+                        ),
                   ),
 
                   const SizedBox(height: 28),
@@ -148,13 +158,10 @@ class ProfileScreen extends ConsumerWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(28),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: .06),
-                          blurRadius: 24,
-                          offset: const Offset(0, 10),
-                        ),
-                      ],
+                      border: Border.all(
+                        color: const Color(0xFFE5E7EB),
+                        width: 2,
+                      ),
                     ),
                     child: Column(
                       children: [
@@ -196,7 +203,7 @@ class ProfileScreen extends ConsumerWidget {
                         const _ProfileRow(
                           icon: CupertinoIcons.info_circle,
                           title: 'Version',
-                          value: '1.0.0',
+                          value: '1.0.4.1',
                         ),
                       ],
                     ),
@@ -240,8 +247,12 @@ class _ProfileRow extends StatelessWidget {
             width: 44,
             height: 44,
             decoration: BoxDecoration(
-              color: const Color(0xFF2E7D32).withValues(alpha: .10),
+              color: const Color.fromARGB(255, 250, 251, 249),
               shape: BoxShape.circle,
+              border: Border.all(
+                color: const Color.fromARGB(255, 216, 222, 217),
+                width: 1,
+              ),
             ),
             child: Icon(
               icon,
@@ -255,20 +266,25 @@ class _ProfileRow extends StatelessWidget {
           Expanded(
             child: Text(
               title,
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-              ),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                  ),
             ),
           ),
 
           if (value != null)
             Text(
               value!,
-              style: const TextStyle(
-                color: Colors.black87,
-              ),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium
+                  ?.copyWith(
+                    color: Colors.black87,
+                  ),
             ),
 
           if (trailing != null) ...[const SizedBox(width: 6), trailing!],

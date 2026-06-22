@@ -49,8 +49,8 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection>
         return;
       }
       _targetOffset = Offset(
-        (-event.x * 3.2).clamp(-22.0, 22.0),
-        (event.y * 1.2).clamp(-8.0, 8.0),
+        (event.x * 3.2).clamp(-22.0, 22.0),
+        (-event.y * 1.2).clamp(-8.0, 8.0),
       );
     });
   }
@@ -225,7 +225,7 @@ class _HomeHeroSectionState extends ConsumerState<HomeHeroSection>
               ),
 
               Positioned(
-                bottom: 37,
+                bottom: 38.5,
                 left: 0,
                 right: 0,
                 child: Center(

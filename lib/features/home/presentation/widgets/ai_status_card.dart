@@ -8,13 +8,13 @@ Widget build(BuildContext context) {
   return Center(
     child: Container(
       width: MediaQuery.of(context).size.width * .78,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 9),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(22),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [const Color(0xFF111111), const Color(0xFF1E1E1E)],
+          colors: [const Color.fromARGB(255, 227, 227, 227), const Color.fromARGB(255, 221, 237, 222)],
         ),
         boxShadow: [
           BoxShadow(
@@ -24,13 +24,13 @@ Widget build(BuildContext context) {
             offset: const Offset(0, 8),
           ),
         ],
-        border: Border.all(color: Colors.white.withValues(alpha: .05)),
+        border: Border.all(color: const Color.fromARGB(255, 222, 222, 222).withValues(alpha: .05)),
       ),
       child: Row(
         children: [
           Container(
-            width: 42,
-            height: 42,
+            width: 37,
+            height: 37,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(14),
               gradient: LinearGradient(
@@ -54,8 +54,8 @@ Widget build(BuildContext context) {
                 Text(
                   'Crop Model Ready',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -63,8 +63,8 @@ Widget build(BuildContext context) {
                 Text(
                   'Offline crop analysis available',
                   style: TextStyle(
-                    color: Colors.white54,
-                    fontSize: 11,
+                    color: Color.fromARGB(137, 47, 47, 47),
+                    fontSize: 10,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -72,14 +72,14 @@ Widget build(BuildContext context) {
             ),
           ),
           Container(
-            width: 10,
-            height: 10,
+            width: 12,
+            height: 12,
             decoration: BoxDecoration(
-              color: const Color(0xFF18B562),
+              color: const Color.fromARGB(198, 19, 204, 158),
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF18B562).withValues(alpha: .6),
+                  color: const Color.fromARGB(255, 30, 191, 105).withValues(alpha: .6),
                   blurRadius: 10,
                 ),
               ],

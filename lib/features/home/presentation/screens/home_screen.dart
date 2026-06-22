@@ -18,14 +18,14 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor:
-          const Color(0xFFF5F8F4),
+          const Color.fromARGB(255, 255, 255, 255),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: SizedBox(
               height:
                   screenHeight * 0.45 +
-                  52,
+                  47,
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [

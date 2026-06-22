@@ -21,8 +21,12 @@ class HomeStatsRow extends ConsumerWidget {
           child: SizedBox(
             width: width * .78,
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: const Color.fromARGB(255, 217, 217, 217), width: 2.0),
+                ),
               child: Row(
                 children: [
                   Expanded(
