@@ -1,0 +1,894 @@
+{
+  "Corn___Common_Rust": {
+    "cropName": "Corn",
+    "isHealthy": false,
+    "diseaseName": "Common Rust",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Common Rust (Puccinia sorghi) is a fungal disease characterized by small, circular to elongated, brick-red to brown powdery pustules (uredia) scattered on both upper and lower leaf surfaces. In severe infections, pustules may also appear on husks and leaf sheaths. The disease thrives in cool temperatures (16–23°C) with high humidity or prolonged leaf wetness. Spores are wind-dispersed and can travel long distances. While rarely causing total crop failure in field corn, heavy infection reduces photosynthesis and can lower yields by 10–40%, with sweet corn being more vulnerable.",
+    "treatments": [
+      "Apply triazole fungicides (propiconazole, tebuconazole) or strobilurin fungicides (azoxystrobin, pyraclostrobin) at first sign of disease",
+      "Use combination fungicides (strobilurin + triazole) for better efficacy and resistance management",
+      "Remove and destroy heavily infected lower leaves to reduce inoculum load",
+      "Apply foliar fungicide at V6–V8 growth stage when conditions favor disease spread",
+      "Repeat fungicide application after 14–21 days if conditions remain favorable for infection"
+    ],
+    "prevention": [
+      "Plant rust-resistant hybrid varieties — this is the primary and most cost-effective control strategy",
+      "Monitor crops regularly, especially during cool and humid weather",
+      "Avoid planting in areas with poor air circulation or low-lying fog-prone fields",
+      "Implement crop rotation to reduce fungal spore carryover in residue",
+      "Maintain balanced soil nutrition — avoid excessive nitrogen which promotes lush, overly susceptible foliage",
+      "Plant early to avoid peak rust infection periods tied to specific weather windows"
+    ],
+    "villageTreatments": [
+      "Spray a solution of wood ash mixed with water (steep overnight, filter, and spray) on affected leaves",
+      "Apply diluted cow urine (1:10 ratio with water) as a natural antifungal foliar spray",
+      "Dust affected plants with dry wood ash during dewy mornings to reduce leaf surface humidity",
+      "Mix 1 part buttermilk with 9 parts water and spray on infected leaves to create an antifungal surface",
+      "Remove and burn affected plant parts away from the field to prevent spore spread to healthy plants"
+    ]
+  },
+
+  "Corn___Gray_Leaf_Spot": {
+    "cropName": "Corn",
+    "isHealthy": false,
+    "diseaseName": "Gray Leaf Spot",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Gray Leaf Spot (Cercospora zeae-maydis) is a major fungal disease of corn that thrives in warm (25–30°C), humid conditions with extended periods of leaf wetness exceeding 11 hours per day. It produces distinctive rectangular, tan to gray lesions that are parallel-sided and bounded by leaf veins, often surrounded by a yellow halo. As the disease progresses, lesions coalesce, causing significant leaf blighting and premature plant senescence. The fungus overwinters in infected crop residue and is most destructive in areas with minimum tillage and continuous corn cultivation. Yield losses of 20–50% can occur under severe infection.",
+    "treatments": [
+      "Apply strobilurin-based fungicides (azoxystrobin, pyraclostrobin) at early disease stages, ideally before tasseling",
+      "Use triazole fungicides (propiconazole, tebuconazole) alone or in combination with strobilurins for extended control",
+      "Scout fields regularly and begin fungicide treatment when disease reaches the third leaf below the ear",
+      "Remove and till infected crop residue after harvest to reduce overwintering inoculum",
+      "Apply a second fungicide application 14–21 days after the first if disease pressure remains high"
+    ],
+    "prevention": [
+      "Plant resistant hybrid varieties — the most effective and economical control measure",
+      "Practice crop rotation (rotate corn with soybean, wheat, or other non-host crops) to reduce residue inoculum",
+      "Adopt tillage practices that bury infected crop residue to speed decomposition",
+      "Ensure adequate plant spacing to improve air circulation and reduce humidity in the canopy",
+      "Avoid excessive nitrogen fertilization, which promotes a dense canopy favoring disease",
+      "Scout fields early in the season, especially in fields with a history of the disease"
+    ],
+    "villageTreatments": [
+      "Spray neem leaf extract (boil 1 kg neem leaves in 5 liters of water, cool, strain, and dilute 5x) on affected plants",
+      "Apply dry wood ash as a foliar dust to reduce surface moisture on leaves",
+      "Burn and remove severely infected lower leaves during early morning hours before spore dispersal peaks",
+      "Spray diluted garlic extract (crush garlic bulbs, soak overnight in water, filter, and dilute 10x) as a natural antifungal",
+      "Deep plow crop residue after harvest and leave field fallow to break the disease cycle"
+    ]
+  },
+
+  "Corn___Healthy": {
+    "cropName": "Corn",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The corn plant appears healthy with no visible signs of disease, pest damage, or nutritional deficiency. Leaves are green and firm, free of lesions, spots, or discoloration. Growth is vigorous and uniform. Proper agronomic practices should be maintained to sustain plant health throughout the growing season.",
+    "treatments": [],
+    "prevention": [
+      "Use certified, disease-resistant seeds appropriate for your agro-climatic region",
+      "Practice crop rotation with non-host crops (soybean, wheat) every 1–2 seasons",
+      "Ensure balanced fertilization (NPK + micronutrients) based on soil test recommendations",
+      "Maintain optimal plant spacing for adequate air circulation through the canopy",
+      "Monitor regularly for early signs of disease or pest infestation, especially after rain",
+      "Remove crop debris after harvest to reduce pathogen and pest carryover to the next season"
+    ],
+    "villageTreatments": []
+  },
+
+  "Corn___Northern_Leaf_Blight": {
+    "cropName": "Corn",
+    "isHealthy": false,
+    "diseaseName": "Northern Leaf Blight",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Northern Leaf Blight (NLB), caused by Exserohilum turcicum, produces distinctive long, elliptical, cigar-shaped grayish-green to tan lesions (2.5–15 cm in length) on corn leaves. The lesions often have wavy, diffuse margins and may show dark olive-green sporulation in humid conditions. The fungus overwinters in infected crop debris and is spread by wind-borne conidia. NLB is most severe in cool (18–27°C), moist weather with extended periods of leaf wetness. Yield losses of 30–70% are possible when infection occurs before or around tasseling, as upper leaves that drive grain fill are most critical.",
+    "treatments": [
+      "Apply fungicides containing propiconazole, azoxystrobin, or picoxystrobin, especially before tasseling",
+      "Use combination fungicides (triazole + strobilurin) for extended protection and resistance management",
+      "Remove and destroy infected plant debris after harvest to eliminate overwintering inoculum",
+      "Apply foliar fungicide at VT (tasseling) to R1 (silking) stage for maximum yield protection",
+      "Repeat application if disease pressure continues after 14–21 days under favorable conditions"
+    ],
+    "prevention": [
+      "Plant NLB-resistant hybrids — look for Ht1, Ht2, HtN or quantitative resistance sources",
+      "Rotate corn with soybean or other non-host crops to reduce pathogen buildup in residue",
+      "Till infected crop residue to speed decomposition and reduce inoculum potential",
+      "Ensure adequate row spacing to improve air movement and reduce leaf wetness duration",
+      "Apply nitrogen in split doses to avoid over-fertilization, which increases canopy density",
+      "Scout early in the season, particularly in fields with a history of NLB or continuous corn"
+    ],
+    "villageTreatments": [
+      "Spray neem oil emulsion (5 ml neem oil per liter of water with a few drops of soap as emulsifier) on leaves",
+      "Remove and burn infected lower leaves at disease onset to reduce spore availability",
+      "Apply diluted cow dung slurry (1 part fresh cow dung in 10 parts water, strained) as a foliar biofungicide spray",
+      "Dust affected areas with dry wood ash during morning dew to suppress fungal development",
+      "Intercrop with legumes (cowpea, groundnut) to reduce corn monoculture density and improve microclimate"
+    ]
+  },
+
+  "Cotton___Bacterial_Blight": {
+    "cropName": "Cotton",
+    "isHealthy": false,
+    "diseaseName": "Bacterial Blight",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Cotton Bacterial Blight, caused by Xanthomonas axonopodis pv. malvacearum (Xam), is one of the most serious bacterial diseases of cotton. It manifests as angular, water-soaked spots on leaves bounded by leaf veins that turn reddish-brown to black (angular leaf spot). Stems and petioles develop elongated, dark, sunken lesions (blackarm). Boll infection causes blackened boll walls and seed rot, leading to reduced fiber quality and lint yield. The pathogen survives in infected seed and crop debris and spreads through rain splash, wind, and contaminated tools. In severe outbreaks, yield losses of 30–60% have been reported.",
+    "treatments": [
+      "Apply copper-based bactericides (copper hydroxide, copper oxychloride) as foliar sprays every 7–10 days",
+      "Use streptomycin sulfate sprays in early stages of infection (where regulatory permits allow)",
+      "Remove and destroy heavily infected plant parts and completely infected plants",
+      "Avoid working in fields when plants are wet to prevent mechanical spread of the bacterium",
+      "Apply bactericide immediately after hail or mechanical injury events that open infection pathways"
+    ],
+    "prevention": [
+      "Use certified disease-free or acid-delinted seeds to eliminate seedborne inoculum",
+      "Plant resistant or tolerant varieties (e.g., MCU-5, Suraj, LRK-516 in India; Deltapine lines)",
+      "Treat seeds with bactericide (streptomycin sulfate + copper oxychloride) before sowing",
+      "Practice strict crop rotation — avoid planting cotton in the same field for 2–3 years",
+      "Avoid overhead irrigation; use drip irrigation to keep leaves dry and reduce splash dispersal",
+      "Remove and burn all cotton stalk debris after harvest to destroy overwintering inoculum",
+      "Regularly disinfect pruning and harvesting tools with 10% bleach solution"
+    ],
+    "villageTreatments": [
+      "Apply a paste of turmeric powder mixed with water on stem lesions as a traditional antimicrobial agent",
+      "Spray boiled and cooled neem leaf extract on affected plants early in the morning",
+      "Remove visibly infected leaves and stems and burn them far from the field immediately",
+      "Apply diluted cow urine spray (1:15 ratio with water) which contains natural antimicrobial compounds",
+      "Drench soil around infected plants with wood ash water to raise local soil pH and reduce bacterial survival"
+    ]
+  },
+
+  "Cotton___Curl_Virus": {
+    "cropName": "Cotton",
+    "isHealthy": false,
+    "diseaseName": "Cotton Leaf Curl Virus",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Cotton Leaf Curl Disease (CLCuD) is caused by a complex of begomoviruses (primarily Cotton leaf curl Multan virus – CLCuMuV) associated with betasatellite molecules, transmitted persistently by the whitefly Bemisia tabaci. Symptoms include upward or downward curling of leaves, prominent vein darkening and thickening, development of leaf-like enations (cup-shaped outgrowths) on the undersides of leaves, and severe stunting of plants. Infected plants produce very few or no bolls. This disease is considered the most economically damaging cotton disease in South Asia, with potential yield losses of 50–100%. There is no chemical cure once a plant is systemically infected.",
+    "treatments": [
+      "Control whitefly vector with systemic insecticides (imidacloprid, thiamethoxam, acetamiprid) applied as soil drench or foliar spray",
+      "Apply neonicotinoid seed treatments to protect early-season seedlings from whitefly colonization",
+      "Remove and destroy infected plants promptly to reduce the virus reservoir within the field",
+      "Install yellow sticky traps to monitor and reduce adult whitefly populations early in the season",
+      "Avoid broad-spectrum insecticides that kill natural whitefly enemies (parasitoids, predatory beetles)"
+    ],
+    "prevention": [
+      "Plant tolerant or resistant varieties (e.g., MNH-786, FH-114, Sitara-008 in Pakistan; Suraj, LRK-516 in India)",
+      "Raise seedlings in insect-proof (50-mesh) net nurseries before field transplanting",
+      "Control whitefly populations from the seedling stage using judicious insecticide rotation",
+      "Use reflective silver or aluminum mulches on the soil surface to disorient and repel adult whiteflies",
+      "Remove weeds (especially Hibiscus, Malvastrum) that serve as alternative hosts for whitefly and virus",
+      "Practice early and uniform planting in the recommended sowing window to escape peak whitefly pressure",
+      "Maintain proper plant spacing to reduce whitefly-favorable dense canopy conditions"
+    ],
+    "villageTreatments": [
+      "Spray a solution of crushed garlic and chili pepper steeped in water (filter and spray) to repel whiteflies",
+      "Place yellow-painted boards or tins coated with sticky grease (or engine oil) to trap adult whiteflies",
+      "Spray diluted neem seed kernel extract (NSKE 5%) to deter whitefly feeding and virus acquisition",
+      "Remove and bury infected plants deeply (60+ cm) or burn them far from the field",
+      "Interplant border rows of marigold or coriander around cotton field to confuse and repel whiteflies"
+    ]
+  },
+
+  "Cotton___Fusarium_Wilt": {
+    "cropName": "Cotton",
+    "isHealthy": false,
+    "diseaseName": "Fusarium Wilt",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Fusarium Wilt of cotton, caused by Fusarium oxysporum f. sp. vasinfectum (Fov), is a soilborne vascular disease that enters the plant through root wounds or root tips. The pathogen colonizes and blocks the xylem vessels, preventing water and nutrient movement upward. Symptoms include sudden wilting of one or more branches, yellowing (chlorosis) of leaves starting from leaf margins and tips, premature leaf drop, stunting, and a characteristic brown to dark brown discoloration of xylem tissue visible when the stem is cut longitudinally. The fungus can persist in soil for decades as chlamydospores. In combination with root-knot nematodes, disease severity increases dramatically. Yield losses of 10–80% are reported in severely infested fields.",
+    "treatments": [
+      "Treat seeds with systemic fungicides (carbendazim 50% WP, thiophanate-methyl) before planting",
+      "Apply Trichoderma harzianum or T. viride biocontrol agents as soil drench around plant roots",
+      "Remove and destroy wilted plants carefully to avoid spreading contaminated soil",
+      "Perform soil solarization (clear plastic over moist soil for 4–6 weeks in summer) to reduce soil fungal populations",
+      "Apply potassium fertilization — adequate K improves plant resistance to vascular wilts"
+    ],
+    "prevention": [
+      "Plant Fusarium-resistant or tolerant cotton varieties as the primary management strategy",
+      "Practice long crop rotation (3–4 years) with non-host crops like sorghum, wheat, or maize",
+      "Manage root-knot nematodes (Meloidogyne species) with nematicides or biological control agents since nematodes significantly worsen Fusarium wilt",
+      "Improve soil drainage and avoid irrigation-induced waterlogging which promotes Fusarium spread",
+      "Maintain soil pH at 6.5–7.0 — avoid acidic soils which favor Fusarium",
+      "Use certified disease-free seeds treated with biocontrol agents (Trichoderma viride)",
+      "Avoid deep plowing in infested fields to prevent spreading Fusarium-laden soil"
+    ],
+    "villageTreatments": [
+      "Mix Trichoderma powder with well-rotted farmyard manure (FYM) and apply in planting furrows before sowing",
+      "Apply neem cake powder (250 kg/ha) around the plant base to reduce soilborne fungal populations",
+      "Remove wilted plants carefully (avoid shaking soil), burn them, and mark the spots to avoid cotton replanting",
+      "Drench soil with Jivamrita (fermented solution of cow dung, cow urine, jaggery, and water) around plant roots",
+      "Practice deep summer plowing after harvest to expose soil to solar heat, which reduces Fusarium survival"
+    ]
+  },
+
+  "Cotton___Healthy": {
+    "cropName": "Cotton",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The cotton plant appears healthy with no visible symptoms of disease, viral infection, or nutrient deficiency. Leaves are green and unwrinkled, growth is vigorous, boll development is normal, and the plant exhibits no signs of pest damage or stress. Continue proper agronomic management to sustain crop health through to harvest.",
+    "treatments": [],
+    "prevention": [
+      "Use certified, high-quality seeds from reputable sources and treat before sowing",
+      "Apply balanced NPK fertilization based on soil test results; correct micronutrient deficiencies",
+      "Practice crop rotation (2–3 years) to break pest and disease cycles",
+      "Monitor regularly for whiteflies, aphids, bollworms, and early disease symptoms",
+      "Use drip irrigation to keep foliage dry and reduce conditions favorable for foliar diseases",
+      "Control weeds regularly as they harbor pests, whiteflies, and disease vectors"
+    ],
+    "villageTreatments": []
+  },
+
+  "Potato___Early_Blight": {
+    "cropName": "Potato",
+    "isHealthy": false,
+    "diseaseName": "Early Blight",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Potato Early Blight, caused by Alternaria solani (and occasionally A. alternata), primarily affects older, lower leaves first. Symptoms include dark brown to black lesions with distinct concentric rings creating a 'target board' or 'bull's-eye' pattern, often surrounded by a bright yellow halo. Lesions also appear on stems and tubers (dark, sunken lesions at the skin surface). The disease is favored by warm temperatures (24–29°C), high humidity, and alternating wet and dry periods. It is most severe on plants weakened by drought, nutrient stress, heavy fruit load, or approaching maturity. Significant yield losses of 20–30% can occur under severe infection, with additional post-harvest tuber losses.",
+    "treatments": [
+      "Apply protective fungicides (chlorothalonil, mancozeb) before disease onset during favorable weather",
+      "Use curative fungicides (azoxystrobin, difenoconazole, propiconazole) at first sign of infection",
+      "Remove and destroy infected lower leaves to slow disease spread upward through the canopy",
+      "Apply fungicide every 7–10 days under high disease pressure or frequent rain",
+      "Ensure adequate potassium and phosphorus nutrition to improve plant resistance to Alternaria"
+    ],
+    "prevention": [
+      "Plant certified disease-free seed tubers from reputable sources",
+      "Use early-blight-resistant or tolerant potato varieties where available",
+      "Practice 3–4 year crop rotation with non-solanaceous crops (cereals, legumes)",
+      "Maintain proper plant nutrition, especially potassium which strengthens disease resistance",
+      "Use drip irrigation to keep foliage dry; avoid overhead sprinkler irrigation",
+      "Ensure adequate plant spacing for good air circulation and faster leaf drying",
+      "Apply preventive fungicide sprays from 30–40 days after emergence during warm, humid weather"
+    ],
+    "villageTreatments": [
+      "Spray a solution of baking soda (1 teaspoon per liter of water) to raise leaf surface pH and inhibit fungal growth",
+      "Apply diluted neem oil spray (5 ml per liter of water with a few drops of soap) on affected leaves",
+      "Remove and burn infected leaves from the bottom of the plant every 2–3 days to slow upward spread",
+      "Apply wood ash around the base of the plant to improve potassium availability and reduce splash dispersal",
+      "Spray a mixture of cow urine (1 part) and water (10 parts) as a traditional antifungal treatment on foliage"
+    ]
+  },
+
+  "Potato___Healthy": {
+    "cropName": "Potato",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The potato plant appears healthy with no signs of disease, nutrient deficiency, or pest stress. Leaves are green and robust, stems are firm and upright, and growth is vigorous and uniform. Continue current management practices to ensure healthy tuber development and maximum yield.",
+    "treatments": [],
+    "prevention": [
+      "Use certified seed tubers free of viruses, bacterial ring rot, and other seedborne pathogens",
+      "Practice crop rotation with cereals or legumes (3–4 year cycle) to break disease cycles",
+      "Apply balanced fertilization with adequate potassium and calcium for tuber quality",
+      "Use drip or furrow irrigation to avoid wetting foliage and reducing late blight risk",
+      "Monitor regularly for early blight, late blight, and aphid or beetle activity",
+      "Hill up soil around plants to protect developing tubers from sunlight and greening"
+    ],
+    "villageTreatments": []
+  },
+
+  "Potato___Late_Blight": {
+    "cropName": "Potato",
+    "isHealthy": false,
+    "diseaseName": "Late Blight",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Potato Late Blight, caused by the oomycete Phytophthora infestans, is one of the most devastating plant diseases in recorded history, responsible for the Irish Potato Famine (1845–1849). It presents as irregular, water-soaked, pale to dark brown or greenish-black lesions on leaves and stems, often with a pale yellow border. A characteristic white, cottony growth (sporangia) appears on the underside of infected leaves in humid conditions. The disease spreads with explosive speed in cool (10–20°C), wet weather, and can destroy an entire field within days. Infected tubers develop a firm, reddish-brown internal rot extending from the skin into the flesh, rendering them unmarketable and a health hazard.",
+    "treatments": [
+      "Apply fungicides containing metalaxyl + mancozeb, cymoxanil + mancozeb, or dimethomorph at first sign or before infection during blight-favorable weather",
+      "Use protective (mancozeb, chlorothalonil, copper) and systemic (metalaxyl, cymoxanil) fungicides in alternation to prevent resistance",
+      "Spray every 5–7 days during cool, wet, blight-favorable conditions",
+      "Destroy infected plant material by deep burial or burning — never compost infected plants",
+      "Apply copper-based fungicides (Bordeaux mixture, copper hydroxide) as proven protective treatments",
+      "Remove and inspect tubers at harvest — destroy infected ones to prevent post-harvest storage rot"
+    ],
+    "prevention": [
+      "Plant certified disease-free seed tubers from reputable sources",
+      "Use late-blight-resistant or tolerant varieties (e.g., Kufri Jyoti, Kufri Bahar, Kufri Khyati in India)",
+      "Practice crop rotation (minimum 3 years) away from potato and tomato (both are hosts)",
+      "Ensure excellent field drainage — avoid low-lying fields prone to waterlogging",
+      "Destroy all volunteer potato plants that can harbor overwintering oospores",
+      "Use blight forecasting alerts (Blight-Alert, BLITECAST) to time preventive sprays accurately",
+      "Hill soil around plants to protect tubers from spores washing down from infected foliage"
+    ],
+    "villageTreatments": [
+      "Apply Bordeaux mixture (dissolve 1 kg copper sulfate in 50L water, separately slake 1 kg lime in 50L water, combine and spray) — a traditional and still effective protective fungicide",
+      "Spray a strong garlic extract (crush 100g garlic in 1L water, filter and dilute 10x) on plants regularly",
+      "Remove and burn all affected vines and leaves immediately upon first detection — do not delay",
+      "Store harvested tubers in cool, dry, well-ventilated dark stores and inspect weekly for rot",
+      "Avoid field entry during rain or morning dew when spores are actively dispersing"
+    ]
+  },
+
+  "Rice___Brown_Spot": {
+    "cropName": "Rice",
+    "isHealthy": false,
+    "diseaseName": "Brown Spot",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Rice Brown Spot, caused by Cochliobolus miyabeanus (anamorph: Helminthosporium oryzae), is a historically significant disease that contributed to the Bengal Famine of 1943. It produces oval to circular spots on leaves with a brown border and a gray to white center (resembling sesame seeds in shape), often with a yellow halo. Grain infection produces dark brown to black discoloration of the glumes (grain spots) and causes unfilled or partially filled grains (chalkiness), severely reducing grain quality and market value. The disease is most severe in soils deficient in nutrients, especially potassium and silicon. Under severe conditions yield losses of 30–60% are possible.",
+    "treatments": [
+      "Apply fungicides such as iprodione (Rovral), propiconazole, tricyclazole, or mancozeb as foliar sprays at tillering and booting stages",
+      "Treat seeds with thiram or mancozeb before planting to eliminate seedborne inoculum",
+      "Apply silicon fertilizer (silica gel, wollastonite, or blast furnace slag) and potassium to strengthen plant cell walls",
+      "Drain fields for 1–2 weeks at mid-tillering stage to reduce humidity-driven disease severity",
+      "Spray a second round of fungicide at booting stage if disease pressure remains high"
+    ],
+    "prevention": [
+      "Use resistant or tolerant rice varieties suited to your region",
+      "Apply balanced fertilization — correct potassium and silicon deficiencies which are the primary drivers of disease severity",
+      "Use healthy, certified seed; hot water treat seeds (52°C for 10 minutes) before sowing",
+      "Practice crop rotation and remove stubble-infected residue after harvest",
+      "Maintain good field drainage — avoid waterlogging during critical crop growth stages",
+      "Avoid excessive nitrogen fertilization which increases tissue susceptibility"
+    ],
+    "villageTreatments": [
+      "Treat seeds by soaking in a 20% salt solution (NaCl), discard floating seeds, rinse with clean water, and sun-dry before sowing",
+      "Apply neem cake (250 kg/ha) to soil before transplanting to suppress soilborne pathogen populations",
+      "Spray diluted cow urine (1:10 ratio with water) as a foliar antifungal treatment during tillering",
+      "Apply paddy husk ash (which is rich in silica) as a soil amendment at transplanting to improve plant resistance",
+      "Soak seeds in garlic-extract water (crush garlic bulbs, steep in water overnight) before sowing to reduce seedborne pathogens"
+    ]
+  },
+
+  "Rice___Healthy": {
+    "cropName": "Rice",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The rice plant appears healthy with no visible signs of disease, pest damage, or nutritional deficiency. Leaves are dark green and erect, tillers are developing uniformly, and the crop stand is vigorous. Continue standard crop management practices and maintain regular scouting to catch any problems early.",
+    "treatments": [],
+    "prevention": [
+      "Use certified, disease-free seeds or seeds treated with biofungicide before sowing",
+      "Maintain proper water management using alternate wetting and drying (AWD) technique",
+      "Apply balanced NPK fertilization with particular attention to silicon and zinc micronutrients",
+      "Transplant seedlings at optimal age (21–25 days) and spacing to allow air circulation",
+      "Scout regularly for blast, brown spot, sheath blight, bacterial leaf blight, and stem borer",
+      "Practice crop rotation and remove stubble after harvest to reduce disease carryover"
+    ],
+    "villageTreatments": []
+  },
+
+  "Rice___Leaf_Blast": {
+    "cropName": "Rice",
+    "isHealthy": false,
+    "diseaseName": "Leaf Blast",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Rice Leaf Blast, caused by Magnaporthe oryzae (anamorph: Pyricularia oryzae), is one of the most destructive rice diseases worldwide, occurring in over 80 rice-growing countries. On leaves, it produces characteristic diamond-shaped or spindle-shaped lesions with a gray or white center and dark brown to red-brown borders ('eye-spot' pattern). In susceptible varieties under high disease pressure, lesions may be large, water-soaked, and coalesce to blight entire leaves rapidly. The disease is favored by high humidity, prolonged leaf wetness (6+ hours), cool to moderate temperatures (24–28°C), and high nitrogen application. Severe leaf blast predisposes plants to neck blast at heading and can reduce yields by 10–30% or more.",
+    "treatments": [
+      "Apply fungicides such as tricyclazole, isoprothiolane, azoxystrobin, or propiconazole at first sign of disease",
+      "Spray at maximum tillering (4–6 weeks after transplanting) and at panicle initiation for comprehensive control",
+      "Use both contact and systemic fungicides in alternation for resistance management",
+      "Apply silicon fertilizer (wollastonite or paddy husk ash) to significantly reduce blast severity",
+      "Reduce nitrogen fertilization, especially in split doses, to avoid inducing excessive susceptibility"
+    ],
+    "prevention": [
+      "Plant blast-resistant varieties — the most cost-effective and sustainable control measure",
+      "Avoid excess nitrogen application; split doses into 3–4 applications rather than large single doses",
+      "Maintain adequate silicon and potassium nutrition for stronger cell walls",
+      "Treat seeds with tricyclazole (Beam) or thiram before sowing to reduce seedborne inoculum",
+      "Avoid water stress — maintain shallow, uniform standing water in the field",
+      "Remove infected plant debris from nursery and field; avoid growing rice continuously in the same field",
+      "Monitor weather conditions and spray preventively during blast-favorable weather (cool foggy mornings)"
+    ],
+    "villageTreatments": [
+      "Spray neem leaf extract (boil 1 kg neem leaves in 5L water, cool and filter, dilute 5x with water) on leaves",
+      "Apply paddy husk ash as soil amendment before transplanting — its high silica content significantly reduces blast intensity",
+      "Soak seeds in Pseudomonas fluorescens talc-based biopesticide solution before sowing to prime plant immunity",
+      "Apply wood ash mixed with water to the field — provides both silicon and potassium to strengthen plants",
+      "Spray diluted cow urine (1:10 ratio) on plants as a traditional biofungicide during tillering stage"
+    ]
+  },
+
+  "Rice___Neck_Blast": {
+    "cropName": "Rice",
+    "isHealthy": false,
+    "diseaseName": "Neck Blast",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Rice Neck Blast is the most devastating form of blast disease, caused by the same pathogen Magnaporthe oryzae but infecting the neck node (rachis) at the base of the panicle or the nodes on the culm. Infection produces a dark brown to black lesion girdling the neck, which cuts off nutrient and water supply to the panicle. This causes the panicle to bend over ('rotten neck' or 'neck rot' symptom) and produces unfilled, chalky, or completely empty grains. If infection occurs just before or at heading (boot to full heading stage), yield losses can reach 70–100%. The disease is most severe under the same conditions as leaf blast: high humidity, moderate temperature, and excessive nitrogen, but occurs at a critical crop stage where even brief infection events are catastrophic.",
+    "treatments": [
+      "Apply tricyclazole, isoprothiolane, or azoxystrobin fungicide 5–7 days before heading and again at 50% heading stage — timing is critical",
+      "Use systemic fungicides (carbendazim, propiconazole) combined with contact fungicides for improved control",
+      "Remove and destroy severely infected panicles to reduce further spore spread within the field",
+      "Apply potassium silicate foliar spray at booting stage to strengthen panicle neck and reduce infection success",
+      "Apply a third fungicide spray at full heading if humid conditions persist after the initial two applications"
+    ],
+    "prevention": [
+      "Plant neck-blast-resistant varieties — check regional resistance ratings annually as pathotype virulence changes",
+      "Avoid late planting that forces heading during peak blast weather (monsoon peak humidity period)",
+      "Apply silicon fertilizer (wollastonite, slag) and correct potassium levels well before heading stage",
+      "Avoid excess nitrogen application, especially at panicle initiation and booting stages",
+      "Scout fields carefully at panicle initiation and heading stages for leaf blast symptoms as a predictor",
+      "Apply preventive fungicide sprays at booting/heading regardless of visible symptoms in high-risk areas",
+      "Maintain uniform irrigation without water stress at heading stage to avoid weakening the neck tissue"
+    ],
+    "villageTreatments": [
+      "Apply potassium-rich organic materials (wood ash, banana peel ash) around the root zone before heading stage",
+      "Spray paddy husk ash extract (steep husk ash overnight in water, filter and spray) at booting stage for silicon supplementation",
+      "Avoid any physical disturbance of plants at heading time as mechanical injury increases infection risk",
+      "Apply Trichoderma mixed with well-rotted farmyard manure (FYM) to nursery beds before seedling raising",
+      "Burn affected panicles far from the field to reduce spore dispersal and prevent secondary infection of surrounding plants"
+    ]
+  },
+
+  "Sugarcane___Healthy": {
+    "cropName": "Sugarcane",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The sugarcane plant appears healthy with no visible disease symptoms, nutrient deficiencies, or pest damage. Stalks are firm, green, and growing vigorously; leaves are dark green and upright with no mottling, wilting, or discoloration. Growth is uniform and the stand density is adequate. Continue current agronomic practices and monitor regularly.",
+    "treatments": [],
+    "prevention": [
+      "Use disease-free, healthy seed setts from certified and inspected sources",
+      "Apply hot water treatment to setts (50°C for 2–3 hours) before planting as standard prophylaxis",
+      "Apply balanced fertilization including NPK and critical micronutrients (Zn, Fe, Mn)",
+      "Maintain proper field drainage — sugarcane is particularly sensitive to waterlogging",
+      "Monitor regularly for red rot, wilt, smut, mosaic, and yellow leaf disease symptoms throughout the crop cycle",
+      "Limit ratoon crops to 2–3 seasons and then plow and replant to avoid pathogen buildup"
+    ],
+    "villageTreatments": []
+  },
+
+  "Sugarcane___Mosaic": {
+    "cropName": "Sugarcane",
+    "isHealthy": false,
+    "diseaseName": "Sugarcane Mosaic",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Sugarcane Mosaic Disease is caused by Sugarcane Mosaic Virus (SCMV) and Sorghum Mosaic Virus (SrMV), primarily transmitted in a non-persistent manner by aphid vectors (Rhopalosiphum maidis, Melanaphis sacchari). Characteristic symptoms include an irregular mosaic or variegated pattern of pale green and dark green alternating areas on young leaves, yellow streaking or chlorotic striping along leaf veins, and in severe cases, leaf narrowing ('shoelace') and plant stunting. The disease reduces photosynthetic efficiency, decreases sucrose accumulation in stalks, and can reduce cane yield by 10–30%. Once plants are infected, there is no chemical cure — roguing is the only field management option.",
+    "treatments": [
+      "Remove and destroy infected plants (roguing) as soon as symptoms are detected to reduce inoculum in the field",
+      "Control aphid vectors with contact insecticides (malathion, dimethoate) or systemic insecticides (imidacloprid)",
+      "Apply neonicotinoid insecticides (imidacloprid) as sett treatment or seedling drench to protect against early aphid transmission",
+      "Use mineral oil sprays to reduce the efficiency of aphid virus transmission by interfering with probing behavior",
+      "Avoid planting near corn or sorghum fields that harbor large populations of the aphid vector"
+    ],
+    "prevention": [
+      "Plant mosaic-resistant or tolerant varieties (e.g., Co-86032, Co-94012, CoM-0265, CoSe-92423 in India)",
+      "Use certified virus-free seed setts from screened and inspected nurseries",
+      "Apply hot water treatment (50°C for 2 hours) to setts before planting to eliminate seedborne virus",
+      "Control aphid populations early in the crop cycle before population explosions",
+      "Remove infected volunteer plants and weed hosts (corn, sorghum, johnsongrass) that may harbor the virus and aphid",
+      "Inspect planting material carefully before planting and rogue out setts showing suspected mosaic symptoms"
+    ],
+    "villageTreatments": [
+      "Spray diluted neem seed kernel extract (NSKE 5%) to deter aphids from settling and transmitting virus",
+      "Apply a soap-water solution (5 ml of liquid soap per liter of water) on aphid-infested leaf undersides to disrupt colonies",
+      "Place yellow sticky traps near crop borders to monitor and capture winged aphid alates entering the field",
+      "Rogue out infected plants during early morning when aphids are less active — place in bags immediately before burning",
+      "Intercrop with garlic or onion border rows to repel aphids from settling in the sugarcane crop"
+    ]
+  },
+
+  "Sugarcane___Red_Rot": {
+    "cropName": "Sugarcane",
+    "isHealthy": false,
+    "diseaseName": "Red Rot",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Sugarcane Red Rot, caused by Colletotrichum falcatum (teleomorph: Glomerella tucumanensis), is known as the 'cancer of sugarcane' and is among the most destructive diseases in sugarcane cultivation. Internal stalk symptoms are diagnostic: red discoloration of the pith with alternating white transverse patches at nodal intervals, giving a distinct 'flag' or banded pattern. External symptoms include yellowing and drying of the spindle leaf (top leaf) progressing downward, followed by wilting and death of the whole shoot. Infected stalks emit a sour, fermented alcoholic smell due to degradation of sucrose. The pathogen spreads through infected setts, soil, and water, and can cause 30–100% yield loss in susceptible varieties with complete juice quality destruction.",
+    "treatments": [
+      "Apply hot water treatment to all seed setts (50°C for 2–3 hours in thermostatically controlled tanks) to eliminate seedborne Colletotrichum",
+      "Drench soil around infected plants with fungicide solutions (carbendazim 0.1%, thiophanate-methyl)",
+      "Uproot and burn all infected stools immediately upon detection — remove entire root clumps and burn on site",
+      "Apply Trichoderma harzianum or T. viride biocontrol agents as soil drenches around uninfected nearby stools",
+      "Do not retain ratoon crop from fields with red rot incidence — plow deeply and replant with a resistant variety"
+    ],
+    "prevention": [
+      "Plant red-rot-resistant varieties — the single most important management strategy (e.g., CoJ-64, Co-0238, CoSe-01434 in India)",
+      "Use certified, healthy seed setts from inspected disease-free fields only",
+      "Treat all seed setts with hot water (50°C/2h) or fungicide dip (carbendazim 0.1% for 5 minutes) before planting",
+      "Maintain proper field drainage — waterlogging promotes rapid pathogen spread through the soil",
+      "Limit ratoon crop to 2 seasons maximum; avoid ratoon in fields with red rot history",
+      "Implement 3–4 year crop rotation with paddy or wheat to reduce soilborne inoculum",
+      "Regularly scout fields for early wilting symptoms and remove infected stools at the first sign"
+    ],
+    "villageTreatments": [
+      "Soak seed setts in Trichoderma solution (mix 10g Trichoderma powder in 10L water) for 30 minutes before planting as a bioprotectant",
+      "Apply neem cake (250 kg/ha) in furrows before planting to suppress soilborne Colletotrichum populations",
+      "Uproot and drag infected plants out of the field and burn them immediately — never leave them in or near the field",
+      "Drench soil near infected areas with diluted wood ash water to raise local pH and reduce fungal activity",
+      "Mark infected spots in the field with stakes and avoid replanting susceptible variety at those locations"
+    ]
+  },
+
+  "Sugarcane___Rust": {
+    "cropName": "Sugarcane",
+    "isHealthy": false,
+    "diseaseName": "Sugarcane Rust",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Sugarcane Rust is caused by Puccinia melanocephala (Brown Rust) and the more recently emerged Puccinia kuehnii (Orange Rust). Brown Rust produces elongated, orange-brown to rust-colored pustules (uredia) primarily on the lower leaf surface with corresponding yellow-green flecks on the upper surface. Orange Rust produces bright orange, powdery pustules mainly on leaf undersides and is more virulent than Brown Rust, having caused major epidemics since its introduction to the Americas and Asia-Pacific in 2000. Both diseases reduce photosynthesis, weaken stalks, and cause yield losses of 5–30% under moderate infection, rising to 50%+ in highly susceptible varieties infected with Orange Rust.",
+    "treatments": [
+      "Apply triazole fungicides (propiconazole, tebuconazole, triadimefon) for effective rust control — apply at first pustule appearance",
+      "Use strobilurin fungicides (azoxystrobin, pyraclostrobin) as alternatives or in tank mixtures with triazoles for enhanced control",
+      "Repeat application after 21 days if humid conditions and active sporulation persist",
+      "Remove heavily infected lower leaves to reduce inoculum load and improve air circulation",
+      "Prioritize Orange Rust treatment as it is far more aggressive and spreads faster than Brown Rust"
+    ],
+    "prevention": [
+      "Plant rust-resistant varieties — the most economical and effective control strategy for both rust types",
+      "Monitor crops regularly between 3–6 months after planting when rust incidence peaks",
+      "Avoid planting rust-susceptible varieties in areas with high rainfall frequency and prolonged leaf wetness periods",
+      "Maintain balanced crop nutrition — potassium deficiency increases rust susceptibility significantly",
+      "Scout fields after periods of rain and elevated humidity; check leaf undersides for pustule formation",
+      "Implement strict quarantine protocols to prevent introduction of Orange Rust (P. kuehnii) into uninfected regions"
+    ],
+    "villageTreatments": [
+      "Remove and burn severely rust-infected lower leaves in early stages of disease to reduce pustule spread",
+      "Spray diluted cow urine (1:10 ratio with water) as a traditional antifungal treatment on lower leaf surfaces",
+      "Apply dry wood ash as a foliar dust during cool mornings to suppress rust pustule development and humidity",
+      "Apply neem oil emulsion (5 ml per liter water with soap) on affected leaves to smother rust pustules",
+      "Remove excess tillers to improve airflow through the crop and reduce the humidity-favorable microclimate"
+    ]
+  },
+
+  "Sugarcane___Yellow": {
+    "cropName": "Sugarcane",
+    "isHealthy": false,
+    "diseaseName": "Yellow Leaf Disease",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Yellow Leaf Disease (YLD) of sugarcane is caused by Sugarcane Yellow Leaf Virus (SCYLV), a polerovirus transmitted in a persistent, circulative manner by the sugarcane aphid Melanaphis sacchari and the corn leaf aphid Rhopalosiphum maidis. The disease is characterized by yellowing of the midrib on the underside of the leaf blade (particularly the 3rd and 4th leaves from the top), which progresses to yellowing of the entire leaf blade and midrib — giving leaves a golden or bright yellow appearance. Yellowing progresses from the leaf tip downward and from the midrib outward. Infected stalks may be shorter and thinner, with reduced sucrose concentration. Losses of 5–25% in yield and juice quality have been documented across Asia, Africa, and the Americas.",
+    "treatments": [
+      "Remove and destroy infected plants (roguing) early to reduce the virus reservoir in the field",
+      "Control aphid vectors with insecticides (malathion, dimethoate, imidacloprid) starting from the early crop growth stage",
+      "Apply systemic insecticides as sett treatment or seedling drench before planting to protect against early season aphid infestation",
+      "Spray mineral oil emulsion on plants to reduce aphid transmission efficiency during high aphid pressure periods",
+      "There is no chemical cure for SCYLV — prevention and vector management are the only options"
+    ],
+    "prevention": [
+      "Plant SCYLV-resistant or tolerant varieties (e.g., Co-86032, Co-94012, CoM-0265 in India)",
+      "Use virus-indexed, certified disease-free planting material from tissue culture or indexed nurseries",
+      "Apply hot water treatment to setts (50°C for 2 hours) to eliminate SCYLV from infected seed material",
+      "Maintain regular aphid vector control from early crop establishment stage",
+      "Remove infected plants promptly as soon as yellowing symptoms are observed",
+      "Avoid planting in fields adjacent to heavily infected blocks where aphid populations are high",
+      "Clean and disinfect cutting tools regularly to prevent any mechanical transmission between plants"
+    ],
+    "villageTreatments": [
+      "Spray NSKE (Neem Seed Kernel Extract 5%) or neem oil emulsion on the crop to deter aphid feeding and virus spread",
+      "Place yellow sticky traps at 10–15 per acre height to capture and monitor winged aphid vectors entering the field",
+      "Rogue out yellow-leafed plants at early crop stage and burn them away from the field to remove virus reservoir",
+      "Intercrop with garlic, onion, or coriander around field borders to naturally repel aphids",
+      "Apply wood ash around plant bases to supply potassium and create a slightly deterrent environment for aphids at soil level"
+    ]
+  },
+
+  "Tomato___Bacterial_Spot": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Bacterial Spot",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Tomato Bacterial Spot is caused by four species of Xanthomonas (X. euvesicatoria, X. vesicatoria, X. perforans, X. gardneri). On leaves, it causes small, water-soaked spots that enlarge to 3–5 mm, turning dark brown to black with a distinctive yellow halo — lesions often remain bounded by leaf veins. Heavily infected leaves turn yellow and drop prematurely. On fruit, it causes raised, scab-like, brown to black lesions with a water-soaked margin that rupture as the fruit matures, reducing marketability dramatically. Stems and petioles show elongated dark cankers. The disease spreads rapidly through rain splash, overhead irrigation, and wind during warm (24–30°C), humid, wet weather. Losses of 10–50% are common during epidemic years.",
+    "treatments": [
+      "Apply copper-based bactericides (copper hydroxide, copper oxychloride) as foliar sprays at 7–10 day intervals from early season",
+      "Add mancozeb to copper sprays (copper-mancozeb tank mix) for enhanced efficacy and reduced resistance risk",
+      "Rotate between copper bactericides and streptomycin sulfate (where regulatory permits exist) to manage copper-resistant strains",
+      "Remove heavily infected leaves and discarded fruit to reduce inoculum within the field",
+      "Disinfect all pruning tools between plants using 10% bleach or 70% ethanol"
+    ],
+    "prevention": [
+      "Use certified disease-free seeds or hot water-treated seeds (50°C for 25 minutes) before sowing",
+      "Plant resistant varieties where available (carrying Bs genes for X. perforans resistance)",
+      "Avoid overhead irrigation; switch to drip irrigation to eliminate splash dispersal",
+      "Provide adequate plant spacing and stake plants to improve canopy air circulation",
+      "Practice crop rotation with non-solanaceous crops for 2–3 years minimum",
+      "Avoid entering and working in wet fields to prevent mechanical spread",
+      "Remove all plant debris promptly after final harvest"
+    ],
+    "villageTreatments": [
+      "Spray a solution of baking soda (1 tsp per liter of water) to create mildly alkaline conditions on leaf surfaces unfavorable for bacteria",
+      "Apply Bordeaux mixture (copper sulfate + lime) as a traditional bactericide on a weekly schedule",
+      "Remove and burn infected leaves and spotted fruit immediately upon detection",
+      "Spray boiled and cooled neem leaf extract on plants to reduce bacterial spread",
+      "Use clay pot-based drip irrigation (matkas with small holes) near plant base to avoid any splash-wetting of foliage"
+    ]
+  },
+
+  "Tomato___Early_Blight": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Early Blight",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Tomato Early Blight, caused by Alternaria solani, is an extremely common fungal disease that first attacks older, lower leaves and progressively moves up the plant. Symptoms are dark brown to black lesions with distinct concentric rings creating a 'target board' or 'bull's-eye' pattern, surrounded by a bright yellow halo. Extensive defoliation caused by coalescing lesions exposes fruit to sunscald. Stem cankers and dark, leathery, sunken lesions at the stem end of fruit also occur. The disease is favored by warm temperatures (24–29°C), high humidity, and alternating wet and dry periods. Plants under nutritional stress, drought, or heavy fruit load are most vulnerable. Yield losses of 30–60% occur under severe epidemics.",
+    "treatments": [
+      "Apply fungicides (chlorothalonil, mancozeb, azoxystrobin, difenoconazole) at 7–10 day intervals from first symptom appearance",
+      "Combine protectant (mancozeb) and systemic (azoxystrobin) fungicides in a spray program for better disease control",
+      "Remove infected leaves carefully (bag them) and dispose away from the field",
+      "Ensure adequate potassium and phosphorus nutrition to improve plant tolerance",
+      "Apply fungicide immediately after rainy periods that create conditions favorable for Alternaria sporulation"
+    ],
+    "prevention": [
+      "Plant resistant or tolerant tomato varieties (e.g., Arka Rakshak, Arka Vikas in India)",
+      "Use drip irrigation instead of overhead sprinklers to keep foliage dry",
+      "Maintain good plant spacing for faster canopy drying and better air circulation",
+      "Practice crop rotation (2–3 years) with non-solanaceous crops",
+      "Stake or cage plants to keep foliage off the ground where inoculum concentrates",
+      "Apply mulch (straw, plastic) around plants to reduce soil splash dispersal of spores",
+      "Remove and compost or burn all crop residues promptly after harvest"
+    ],
+    "villageTreatments": [
+      "Remove and burn infected lower leaves every 3–5 days at disease onset to slow upward spread",
+      "Spray diluted neem oil (5 ml per liter water with a drop of soap) on leaves, focusing on lower leaf surfaces",
+      "Apply baking soda solution (1 tsp per liter of water) to raise leaf surface pH and inhibit Alternaria spore germination",
+      "Mulch around plants with dry straw, paddy husk, or dried leaves to prevent spore splash from the soil surface",
+      "Spray cow urine diluted 1:10 with water on foliage as a traditional antifungal spray every 7–10 days"
+    ]
+  },
+
+  "Tomato___Healthy": {
+    "cropName": "Tomato",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The tomato plant appears healthy with no visible signs of disease, pest infestation, or nutritional deficiency. Leaves are dark green and vigorous, stems are upright and firm, and fruit development is proceeding normally. Maintain current agronomic and monitoring practices to sustain crop health through harvest.",
+    "treatments": [],
+    "prevention": [
+      "Use certified disease-free or virus-tested seeds and healthy transplants",
+      "Rotate tomatoes with non-solanaceous crops (cereals, legumes) every 2–3 years",
+      "Apply balanced NPK fertilization with adequate calcium (to prevent blossom end rot) and magnesium",
+      "Use drip irrigation and mulching to reduce foliar disease risk and conserve soil moisture",
+      "Monitor regularly for early blight, late blight, bacterial spot, and whitefly/aphid infestations",
+      "Stake or cage plants to improve air circulation, reduce fruit-to-soil contact, and prevent splash infections"
+    ],
+    "villageTreatments": []
+  },
+
+  "Tomato___Late_Blight": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Late Blight",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Tomato Late Blight, caused by Phytophthora infestans (same pathogen as in potato), is among the most catastrophically destructive tomato diseases globally. Large, irregular, greasy-looking, dark brown to black water-soaked lesions appear on leaves and stems, often bordered by a pale-green halo. In humid conditions, white cottony sporulation (sporangia and sporangiophores) appears on the underside of infected leaves and on stems. Fruits develop firm, brown to greenish-brown greasy lesions that can encompass the entire fruit. The disease progresses with explosive speed in cool (10–20°C), wet, and humid weather. An entire field can be wiped out within 7–10 days without intervention.",
+    "treatments": [
+      "Apply fungicides containing metalaxyl + mancozeb, cymoxanil + mancozeb, or dimethomorph at first sign of disease",
+      "Spray copper-based fungicides (Bordeaux mixture, copper hydroxide) as protective treatments before infection occurs",
+      "Rotate between different fungicide chemical groups (systemic vs. protectant) to prevent resistance development",
+      "Spray every 5–7 days during cool, wet, high-risk conditions",
+      "Destroy infected plants by deep burial or burning — never leave infected material in or near the field",
+      "Apply fungicide from both above and below the canopy to cover leaf undersides where sporulation occurs"
+    ],
+    "prevention": [
+      "Plant resistant or tolerant varieties (e.g., Arka Rakshak, Arka Samrat in India; Defiant PhR, Mountain Magic in US)",
+      "Use certified disease-free transplants raised in protected, sanitary conditions",
+      "Avoid planting near potato fields — P. infestans spreads freely between both crops",
+      "Ensure excellent soil drainage to prevent waterlogging that promotes Phytophthora",
+      "Use drip irrigation to eliminate leaf wetting",
+      "Apply preventive fungicide sprays before expected cool, wet, rainy periods",
+      "Remove and destroy all crop debris after harvest; do not leave tomato volunteers in the field"
+    ],
+    "villageTreatments": [
+      "Spray Bordeaux mixture (1 kg copper sulfate + 1 kg lime dissolved separately in 100L water, then combined) — a time-tested, highly effective preventive fungicide",
+      "Remove and burn all visibly infected plants or branches immediately — every hour of delay worsens spread",
+      "Avoid any overhead watering or flood irrigation — use furrow or clay-pot drip methods",
+      "Apply wood ash steeped in water (overnight) spray on plants as a copper-alternative preventive",
+      "Store harvested tomatoes in well-ventilated, cool, shaded locations and inspect daily, removing any showing lesions"
+    ]
+  },
+
+  "Tomato___Leaf_Mold": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Leaf Mold",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Tomato Leaf Mold, caused by Passalora fulva (formerly Cladosporium fulvum / Fulvia fulva), is primarily a disease of greenhouse and tunnel-grown tomatoes, though it also occurs in humid outdoor environments. Symptoms begin as pale yellowish-green to yellow, diffuse spots on the upper leaf surface, with corresponding olive-green to grayish-brown velvety mold growth on the underside of leaves (composed of conidiophores and conidia). Infected leaves curl upward, turn completely yellow, and die prematurely. Severe infection causes extensive defoliation, reducing yield and exposing fruit to sunscald. The pathogen thrives at very high relative humidity (above 85%) and temperatures of 22–24°C. Many new pathotypes exist that overcome previously resistant varieties.",
+    "treatments": [
+      "Apply fungicides such as chlorothalonil, mancozeb, copper hydroxide, or myclobutanil as foliar sprays",
+      "Use systemic options (azoxystrobin, difenoconazole, flusilazole) for curative treatment after infection",
+      "Increase ventilation in polyhouses by opening side walls and vents to bring humidity below 85%",
+      "Remove infected leaves carefully and dispose of outside the growing area — not in compost piles",
+      "Apply fungicide spray focusing specifically on the underside of leaves where sporulation occurs"
+    ],
+    "prevention": [
+      "Plant varieties carrying Cf resistance genes (Cf-1, Cf-2, Cf-4, Cf-9 etc.) for partial protection",
+      "Maintain relative humidity below 85% through ventilation, spacing, and daytime heating in greenhouses",
+      "Provide adequate plant spacing (45–60 cm) to improve air circulation through the canopy",
+      "Water only in the morning so foliage dries fully before evening — never water in late afternoon",
+      "Disinfect greenhouse structures, supports, and tools between crop cycles with copper sulfate solution",
+      "Remove all crop debris thoroughly after harvest and solarize greenhouse soil between cycles",
+      "Apply preventive fungicide sprays during periods of persistent high humidity or foggy weather"
+    ],
+    "villageTreatments": [
+      "Open the side walls of polyhouses and shade nets in the morning hours to reduce humidity and improve ventilation",
+      "Spray neem oil emulsion (5 ml per liter with soap as emulsifier) on leaf undersides every 7–10 days",
+      "Remove affected leaves daily in early disease stages and burn them well away from the growing area",
+      "Spray baking soda solution (1 tsp per liter water) on leaves to create an alkaline surface unfavorable for the fungus",
+      "Avoid watering in the evening — always water early in the morning to allow leaves to dry completely by night"
+    ]
+  },
+
+  "Tomato___Septoria_Leaf_Spot": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Septoria Leaf Spot",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Tomato Septoria Leaf Spot, caused by Septoria lycopersici, is a very common and destructive fungal disease that first appears on lower leaves after fruit set begins. Symptoms are highly distinctive: small, circular spots (3–5 mm diameter) with dark brown margins and a lighter gray to tan center, containing small, dark black specks (pycnidia — the asexual fruiting bodies of the fungus) visible with a hand lens. Lesions coalesce as the disease advances, causing yellowing and premature defoliation starting from the bottom of the plant and progressively moving upward. Severe defoliation exposes fruit to sunscald and significantly reduces yield by 20–60%. The pathogen overwinters in infected debris and is spread by rain splash, overhead irrigation, tools, and workers moving through wet plants.",
+    "treatments": [
+      "Apply copper-based fungicides (copper hydroxide, copper sulfate) or chlorothalonil, mancozeb at first sign of disease",
+      "Use systemic fungicides (azoxystrobin, difenoconazole) for advanced or rapidly spreading infections",
+      "Remove and destroy infected leaves, beginning from the bottom of the plant, as soon as spots are detected",
+      "Spray every 7–10 days during warm, wet weather that favors rapid disease progression",
+      "Disinfect all tools and equipment used in infected fields using bleach or alcohol solution between plants"
+    ],
+    "prevention": [
+      "Practice 2–3 year crop rotation with non-solanaceous crops (beans, corn, cucumbers)",
+      "Use certified disease-free transplants raised in clean, sanitary conditions",
+      "Stake plants and remove suckers to improve air circulation and reduce lower canopy humidity",
+      "Apply thick mulch (straw, plastic) to prevent rain splash of soilborne pycnidia onto lower leaves",
+      "Avoid overhead irrigation; switch to drip irrigation to reduce leaf wetness duration",
+      "Remove all tomato plant debris from the field immediately after harvest",
+      "Apply preventive copper fungicide spray program starting from the transplanting stage"
+    ],
+    "villageTreatments": [
+      "Remove and burn infected lower leaves every 3–5 days — do not leave infected leaf material on the soil",
+      "Apply Bordeaux mixture (copper sulfate + lime) spray as a traditional protective fungicide every 10–14 days",
+      "Mulch heavily around plant bases with dry straw or paddy husk to prevent spore splash from infected soil to leaves",
+      "Spray boiled and cooled neem leaf extract on plants as a natural antifungal treatment",
+      "Stake plants with bamboo poles or strings to keep them upright, improving air circulation and reducing ground contact"
+    ]
+  },
+
+  "Tomato___Tomato_Mosaic_Virus": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Tomato Mosaic Virus",
+    "confidence": 0.0,
+    "severity": "Medium",
+    "diagnosis": "Tomato Mosaic Virus (ToMV) is a highly stable tobamovirus that can persist in soil, plant debris, and on contaminated surfaces for years without losing infectivity. Symptoms include alternating light and dark green mottling (mosaic pattern) on young leaves, leaf distortion or blistering, and in severe strains, 'fern-leaf' (extreme leaf narrowing) and fruit abnormalities (uneven ripening, irregular yellow-green patches on fruit surface). ToMV is primarily transmitted mechanically — through handling of plants with contaminated hands, tools, clothing, or tobacco products — rather than by insect vectors. It is extremely difficult to eliminate once established in a growing area due to its stability in soil and on surfaces.",
+    "treatments": [
+      "Remove and destroy infected plants immediately — there is no chemical cure for any viral disease",
+      "Disinfect hands thoroughly with soap and water before and after handling plants",
+      "Sterilize all tools and equipment using 10% bleach solution or 70% isopropyl alcohol between plants",
+      "Avoid smoking or handling tobacco products near tomato plants as ToMV can survive in processed tobacco products",
+      "Reduce plant stress through optimal irrigation and nutrition to minimize symptom severity in remaining plants"
+    ],
+    "prevention": [
+      "Plant ToMV-resistant varieties carrying Tm-1, Tm-2, or Tm-22 resistance genes — most commercial greenhouse hybrids carry these",
+      "Use certified, virus-tested seeds or treat seeds with dry heat (70°C for 2 days) to inactivate seed-surface virus",
+      "Enforce strict sanitation — wash hands with soap before entering growing areas and after any contact with plants",
+      "Prohibit smoking or tobacco chewing near growing areas and nurseries",
+      "Remove weeds and volunteer tomato plants that may harbor virus inoculum",
+      "Use fresh planting media each season and disinfect growing containers between crop cycles"
+    ],
+    "villageTreatments": [
+      "Wash hands thoroughly with soap and water before touching plants, especially when transplanting or pruning",
+      "Dip cutting tools in boiling water or heat over a flame for 30 seconds before moving between plants",
+      "Remove and burn infected plants immediately — do not place in compost or leave on field borders",
+      "Avoid chewing tobacco or bidi while working in the tomato field — ToMV from tobacco can infect plants via saliva",
+      "Tag suspected infected plants with a colored string to mark and isolate them before removal"
+    ]
+  },
+
+  "Tomato___Yellow_Leaf_Curl_Virus": {
+    "cropName": "Tomato",
+    "isHealthy": false,
+    "diseaseName": "Tomato Yellow Leaf Curl Virus",
+    "confidence": 0.0,
+    "severity": "Critical",
+    "diagnosis": "Tomato Yellow Leaf Curl Virus (TYLCV) is a monopartite begomovirus transmitted persistently and exclusively by the silverleaf whitefly Bemisia tabaci biotypes B and Q. It is one of the most economically devastating tomato diseases worldwide. Symptoms include upward curling of leaf margins into a cup or bowl shape, yellowing (chlorosis) of leaf edges and interveinal areas, severe stunting and compact, bushy plant appearance, and greatly reduced fruit set. When infection occurs before or during early flowering, yield losses of 50–100% are possible. A whitefly can acquire the virus in 15–30 minutes of feeding on infected plants and transmit it to a healthy plant within 30–60 minutes. There is no chemical cure once systemic infection is established.",
+    "treatments": [
+      "Control whitefly vector with systemic insecticides (imidacloprid, thiamethoxam, diafenthiuron) applied as foliar spray or soil drench — rotate chemical classes to manage resistance",
+      "Apply insecticidal soap or pyrethrin sprays to suppress whitefly nymph populations on leaf undersides",
+      "Use reflective silver or aluminum mulches around plants to disorient and repel adult whiteflies",
+      "Remove and destroy infected plants as soon as TYLCV symptoms appear to reduce the virus reservoir",
+      "Install yellow sticky traps to monitor adult whitefly population density and guide spray timing"
+    ],
+    "prevention": [
+      "Plant TYLCV-resistant or tolerant varieties (e.g., Arka Samrat, Arka Ananya, Naveen in India; Tyking, Tygress, Shanty as commercial varieties)",
+      "Raise transplants exclusively in insect-proof (40–50 mesh nylon net) nurseries before field planting",
+      "Transplant during cooler seasons when whitefly populations are naturally lower",
+      "Maintain 4–5 border rows of maize or sorghum around tomato fields as a tall-crop whitefly barrier",
+      "Apply reflective mulches at the seedling stage to repel whiteflies during the most vulnerable plant stage",
+      "Remove all weeds — especially Parthenium, Solanum nigrum — that host both whitefly and TYLCV"
+    ],
+    "villageTreatments": [
+      "Spray neem seed kernel extract (NSKE 5%) every 7–10 days to deter whitefly feeding, settling, and virus acquisition",
+      "Make yellow-colored plastic bottles or boards coated with used engine oil or sticky grease and hang in the field to trap adult whiteflies",
+      "Grow 4–5 rows of maize or sorghum around all tomato field borders to act as a physical whitefly barrier",
+      "Remove and immediately burn infected plants — never leave them in the field or nearby",
+      "Spray a mixture of crushed garlic (100g) and green chili (50g) steeped overnight in 1L water, filtered and diluted 5x, as a natural whitefly repellent"
+    ]
+  },
+
+  "Wheat___Brown_Rust": {
+    "cropName": "Wheat",
+    "isHealthy": false,
+    "diseaseName": "Brown Rust",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Wheat Brown Rust (Leaf Rust), caused by Puccinia triticina (formerly P. recondita f. sp. tritici), is the most globally widespread and frequently occurring rust disease of wheat, found on every continent where wheat is grown. Symptoms appear as small (1–2 mm), round to oval, orange-brown uredia (pustules) scattered randomly on upper leaf surfaces. Later in the season, dark brown to black telia replace the uredia. Unlike Yellow Rust, pustules are not arranged in stripes. The disease thrives at moderate temperatures (15–22°C) with high humidity or dew. New virulent races regularly overcome host resistance. Yield losses of 20–40% occur in susceptible varieties under severe epidemics, and the disease can spread rapidly across regions via wind-borne urediniospores.",
+    "treatments": [
+      "Apply triazole fungicides (propiconazole, tebuconazole, flutriafol) or strobilurin fungicides (azoxystrobin, trifloxystrobin) at first pustule detection",
+      "Use combination fungicides (triazole + strobilurin) for dual-mode action and delayed resistance development",
+      "Apply fungicide at flag leaf stage (GS37–39) for best protection of the yield-determining upper canopy leaves",
+      "Ensure thorough spray coverage with adequate water volume for penetration into the canopy",
+      "Repeat application after 14–21 days if disease pressure continues under favorable weather"
+    ],
+    "prevention": [
+      "Plant rust-resistant varieties — most sustainable and cost-effective management approach; consult annually updated regional resistance ratings",
+      "Avoid late planting, which increases exposure during critical leaf development and heading stages",
+      "Monitor fields from tillering stage onward, especially after periods of high humidity, dew, or rain",
+      "Apply nitrogen in split doses and avoid over-fertilization that creates a dense, humid, susceptible canopy",
+      "Remove volunteer wheat plants and grass-family (Poaceae) weeds around field borders that may serve as rust hosts",
+      "Follow state agricultural department variety resistance ratings that are updated as new races emerge"
+    ],
+    "villageTreatments": [
+      "Remove and burn volunteer wheat plants and heavily infected tillers at early stages of rust appearance",
+      "Spray diluted cow urine (1:10 ratio with water) on leaves as a traditional antifungal foliar treatment",
+      "Apply dry wood ash as a foliar dust on dew-moist leaves in the early morning to create conditions unfavorable for urediniospore germination",
+      "Sow in the recommended planting window for your region to allow the crop to mature before peak rust weather",
+      "Ensure adequate potassium availability through wood ash, compost, or available organic fertilizers to strengthen plant cell walls against rust infection"
+    ]
+  },
+
+  "Wheat___Healthy": {
+    "cropName": "Wheat",
+    "isHealthy": true,
+    "diseaseName": null,
+    "confidence": 0.0,
+    "severity": "None",
+    "diagnosis": "The wheat plant appears healthy with no visible disease symptoms, nutrient deficiencies, or pest damage. Leaves are green and erect, tillers are developing normally, and growth is vigorous and uniform. Continue current agronomic practices and maintain regular scouting, especially for rust diseases during humid weather.",
+    "treatments": [],
+    "prevention": [
+      "Use certified, rust-resistant seed varieties suited to your agro-climatic region and updated resistance ratings",
+      "Apply balanced NPK fertilization based on soil test recommendations with special attention to sulfur for grain protein",
+      "Maintain optimal seeding rate and row spacing to allow good canopy air circulation",
+      "Monitor regularly for yellow rust, brown rust, stem rust, powdery mildew, and Karnal bunt",
+      "Implement crop rotation with non-grass crops (mustard, pulses, potato) to break disease cycles",
+      "Remove volunteer wheat plants and grass weeds around field edges to eliminate rust inoculum sources"
+    ],
+    "villageTreatments": []
+  },
+
+  "Wheat___Yellow_Rust": {
+    "cropName": "Wheat",
+    "isHealthy": false,
+    "diseaseName": "Yellow Rust",
+    "confidence": 0.0,
+    "severity": "High",
+    "diagnosis": "Wheat Yellow Rust (Stripe Rust), caused by Puccinia striiformis f. sp. tritici, is one of the most destructive wheat diseases globally, with devastating epidemics in Asia, Africa, Europe, and North America. It is characterized by yellow-orange uredia arranged in distinct parallel stripes or rows along leaf veins, producing a striped yellow appearance. White-gray mycelium stripes may appear on leaf sheaths. The disease is favored by cool temperatures (2–15°C for infection; optimum 9–13°C) and high humidity, making it especially destructive in irrigated cool-season wheat areas and highlands. Virulent new races (Warrior, Kranich, Pst-S7) have overcome many previously resistant varieties globally. Yield losses of 10–70% can occur, with complete crop failure in extreme cases when infection spreads to the ear.",
+    "treatments": [
+      "Apply triazole fungicides (propiconazole, tebuconazole, cyproconazole) immediately upon first stripe detection",
+      "Use combination fungicides (triazole + strobilurin, such as Amistar Xtra or Prosaro) for broad-spectrum protection",
+      "Apply at flag leaf emergence (GS37–39) and again at ear emergence if disease remains active and humid cool weather persists",
+      "Ensure thorough spray coverage of upper leaf surfaces where striped pustules sporulate",
+      "Repeat application after 14 days in persistent cool, moist weather"
+    ],
+    "prevention": [
+      "Plant yellow-rust-resistant varieties and check resistance ratings annually — many varieties have lost effectiveness as new virulent races (e.g., Warrior race) have emerged",
+      "Scout fields regularly from early spring/winter season and immediately after periods of fog, rain, or dew",
+      "Monitor fields specifically for 'skips' in resistance — if isolated stripe rust patches appear in resistant varieties, new races may be present",
+      "Avoid excess nitrogen application, particularly as a single large dose, which increases disease severity",
+      "Plant early-maturing varieties to allow the crop to reach maturity before peak stripe rust infection period",
+      "Report new or unusual stripe rust outbreaks to local agricultural extension offices for pathotype monitoring"
+    ],
+    "villageTreatments": [
+      "Spray wood ash water (steep ash in water overnight, filter and spray) on leaves during cool dewy mornings to create unfavorable conditions for rust spores",
+      "Apply diluted cow urine (1:10 ratio) as a foliar biofungicide spray during the tillering to jointing stage",
+      "Remove and burn heavily infected tillers immediately to reduce spore load and slow the spread to unaffected plants",
+      "Sow in the early end of the recommended window to allow plants to reach maturity before peak yellow rust weather",
+      "Incorporate potassium-rich organic matter (well-composted manure, wood ash) into soil before sowing to strengthen plant disease resistance"
+    ]
+  }
+}

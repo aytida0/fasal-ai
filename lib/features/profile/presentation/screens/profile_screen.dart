@@ -194,8 +194,8 @@ class ProfileScreen extends ConsumerWidget {
 
                         const _ProfileRow(
                           icon: CupertinoIcons.leaf_arrow_circlepath,
-                          title: 'About App',
-                          value: 'Fasal AI',
+                          title: 'Crop Model',
+                          value: 'Offline Model V1.2',
                         ),
 
                         const _ProfileDivider(),
@@ -203,7 +203,7 @@ class ProfileScreen extends ConsumerWidget {
                         const _ProfileRow(
                           icon: CupertinoIcons.info_circle,
                           title: 'Version',
-                          value: '1.0.4.1',
+                          value: '1.0.5',
                         ),
                       ],
                     ),

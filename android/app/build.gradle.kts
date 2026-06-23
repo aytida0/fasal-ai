@@ -9,6 +9,12 @@ android {
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
+    // Required by tflite_flutter: prevents the model from being GZIP-compressed
+    // inside the APK, so it can be memory-mapped at runtime.
+    aaptOptions {
+        noCompress += listOf("tflite")
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
