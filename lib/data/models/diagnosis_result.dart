@@ -15,6 +15,8 @@ class DiagnosisResult {
 
   final String imagePath;
 
+  final bool isCloudResult;
+
   const DiagnosisResult({
     required this.cropName,
     required this.isHealthy,
@@ -24,5 +26,6 @@ class DiagnosisResult {
     required this.treatments,
     required this.prevention,
     required this.imagePath,
+    this.isCloudResult = false,
   });
 }

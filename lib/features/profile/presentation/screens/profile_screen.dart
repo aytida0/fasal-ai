@@ -203,7 +203,7 @@ class ProfileScreen extends ConsumerWidget {
                         const _ProfileRow(
                           icon: CupertinoIcons.info_circle,
                           title: 'Version',
-                          value: '1.0.5',
+                          value: '1.0.6 (beta)',
                         ),
                       ],
                     ),

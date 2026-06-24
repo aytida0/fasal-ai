@@ -14,6 +14,7 @@ class HistoryMapper {
       treatments: history.treatments,
       prevention: history.prevention,
       imagePath: history.imagePath,
+      isCloudResult: history.isCloudResult,
     );
   }
 }

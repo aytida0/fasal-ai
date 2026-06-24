@@ -27,12 +27,10 @@ class ResultSectionCard extends StatelessWidget {
             BorderRadius.circular(
           24,
         ),
-        boxShadow: const [
-          BoxShadow(
-            blurRadius: 10,
-            color: Colors.black12,
-          ),
-        ],
+        border: Border.all(
+          color: Colors.grey.shade200,
+          width: 2,
+        ),
       ),
       child: Column(
         crossAxisAlignment:

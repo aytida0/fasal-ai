@@ -123,7 +123,7 @@ class DiagnosisHistorySection extends ConsumerWidget {
               }
 
               final latest =
-                  items.take(5).toList();
+                  items.take(10).toList();
 
               return Column(
                 children:

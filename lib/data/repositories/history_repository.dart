@@ -19,11 +19,40 @@ class HistoryRepository {
       ..createdAt = DateTime.now()
       ..diagnosis = result.diagnosis
       ..treatments = result.treatments
-      ..prevention = result.prevention;
+      ..prevention = result.prevention
+      ..isCloudResult = result.isCloudResult;
 
     await isar.writeTxn(() async {
       await isar.diagnosisHistorys.put(history);
     });
+  }
+
+  Future<void> updateDiagnosisByImagePath(DiagnosisResult result) async {
+    final isar = await IsarService.instance();
+    
+    final existing = await isar.diagnosisHistorys
+        .filter()
+        .imagePathEqualTo(result.imagePath)
+        .findFirst();
+        
+    if (existing != null) {
+      existing
+        ..cropName = result.cropName
+        ..diseaseName = result.diseaseName
+        ..isHealthy = result.isHealthy
+        ..confidence = result.confidence
+        ..diagnosis = result.diagnosis
+        ..treatments = result.treatments
+        ..prevention = result.prevention
+        ..isCloudResult = result.isCloudResult;
+
+      await isar.writeTxn(() async {
+        await isar.diagnosisHistorys.put(existing);
+      });
+    } else {
+      // Fallback if not found
+      await saveDiagnosis(result);
+    }
   }
 
   Future<List<DiagnosisHistory>> getHistory() async {
@@ -33,5 +62,13 @@ class HistoryRepository {
         .where()
         .sortByCreatedAtDesc()
         .findAll();
+  }
+
+  Stream<List<DiagnosisHistory>> watchHistory() async* {
+    final isar = await IsarService.instance();
+    yield* isar.diagnosisHistorys
+        .where()
+        .sortByCreatedAtDesc()
+        .watch(fireImmediately: true);
   }
 }

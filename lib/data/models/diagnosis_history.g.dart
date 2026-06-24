@@ -47,18 +47,23 @@ const DiagnosisHistorySchema = CollectionSchema(
       name: r'imagePath',
       type: IsarType.string,
     ),
-    r'isHealthy': PropertySchema(
+    r'isCloudResult': PropertySchema(
       id: 6,
+      name: r'isCloudResult',
+      type: IsarType.bool,
+    ),
+    r'isHealthy': PropertySchema(
+      id: 7,
       name: r'isHealthy',
       type: IsarType.bool,
     ),
     r'prevention': PropertySchema(
-      id: 7,
+      id: 8,
       name: r'prevention',
       type: IsarType.stringList,
     ),
     r'treatments': PropertySchema(
-      id: 8,
+      id: 9,
       name: r'treatments',
       type: IsarType.stringList,
     )
@@ -121,9 +126,10 @@ void _diagnosisHistorySerialize(
   writer.writeString(offsets[3], object.diagnosis);
   writer.writeString(offsets[4], object.diseaseName);
   writer.writeString(offsets[5], object.imagePath);
-  writer.writeBool(offsets[6], object.isHealthy);
-  writer.writeStringList(offsets[7], object.prevention);
-  writer.writeStringList(offsets[8], object.treatments);
+  writer.writeBool(offsets[6], object.isCloudResult);
+  writer.writeBool(offsets[7], object.isHealthy);
+  writer.writeStringList(offsets[8], object.prevention);
+  writer.writeStringList(offsets[9], object.treatments);
 }
 
 DiagnosisHistory _diagnosisHistoryDeserialize(
@@ -140,9 +146,10 @@ DiagnosisHistory _diagnosisHistoryDeserialize(
   object.diseaseName = reader.readStringOrNull(offsets[4]);
   object.id = id;
   object.imagePath = reader.readString(offsets[5]);
-  object.isHealthy = reader.readBool(offsets[6]);
-  object.prevention = reader.readStringList(offsets[7]) ?? [];
-  object.treatments = reader.readStringList(offsets[8]) ?? [];
+  object.isCloudResult = reader.readBool(offsets[6]);
+  object.isHealthy = reader.readBool(offsets[7]);
+  object.prevention = reader.readStringList(offsets[8]) ?? [];
+  object.treatments = reader.readStringList(offsets[9]) ?? [];
   return object;
 }
 
@@ -168,8 +175,10 @@ P _diagnosisHistoryDeserializeProp<P>(
     case 6:
       return (reader.readBool(offset)) as P;
     case 7:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readBool(offset)) as P;
     case 8:
+      return (reader.readStringList(offset) ?? []) as P;
+    case 9:
       return (reader.readStringList(offset) ?? []) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -1011,6 +1020,16 @@ extension DiagnosisHistoryQueryFilter
   }
 
   QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterFilterCondition>
+      isCloudResultEqualTo(bool value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'isCloudResult',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterFilterCondition>
       isHealthyEqualTo(bool value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
@@ -1564,6 +1583,20 @@ extension DiagnosisHistoryQuerySortBy
   }
 
   QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
+      sortByIsCloudResult() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'isCloudResult', Sort.asc);
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
+      sortByIsCloudResultDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'isCloudResult', Sort.desc);
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
       sortByIsHealthy() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isHealthy', Sort.asc);
@@ -1678,6 +1711,20 @@ extension DiagnosisHistoryQuerySortThenBy
   }
 
   QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
+      thenByIsCloudResult() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'isCloudResult', Sort.asc);
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
+      thenByIsCloudResultDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'isCloudResult', Sort.desc);
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QAfterSortBy>
       thenByIsHealthy() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isHealthy', Sort.asc);
@@ -1733,6 +1780,13 @@ extension DiagnosisHistoryQueryWhereDistinct
       distinctByImagePath({bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'imagePath', caseSensitive: caseSensitive);
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, DiagnosisHistory, QDistinct>
+      distinctByIsCloudResult() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'isCloudResult');
     });
   }
 
@@ -1802,6 +1856,13 @@ extension DiagnosisHistoryQueryProperty
   QueryBuilder<DiagnosisHistory, String, QQueryOperations> imagePathProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'imagePath');
+    });
+  }
+
+  QueryBuilder<DiagnosisHistory, bool, QQueryOperations>
+      isCloudResultProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'isCloudResult');
     });
   }
 

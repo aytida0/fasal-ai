@@ -23,4 +23,6 @@ class DiagnosisHistory {
   List<String> treatments = [];
 
   List<String> prevention = [];
+
+  bool isCloudResult = false;
 }

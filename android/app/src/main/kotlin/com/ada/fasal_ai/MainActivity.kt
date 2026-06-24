@@ -1,4 +1,4 @@
-package com.example.fasal_ai
+package com.ada.fasal_ai
 
 import io.flutter.embedding.android.FlutterActivity
 

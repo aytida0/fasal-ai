@@ -11,7 +11,6 @@ import 'package:sensors_plus/sensors_plus.dart';
 import '../../../../data/models/diagnosis_result.dart';
 import '../../../../data/repositories/history_repository.dart';
 import '../providers/diagnosis_provider.dart';
-import '../../../history/providers/history_provider.dart';
 import '../../../home/providers/home_stats_provider.dart';
 
 class LoadingScreen extends ConsumerStatefulWidget {
@@ -94,7 +93,6 @@ class _LoadingScreenState extends ConsumerState<LoadingScreen>
 
     await HistoryRepository().saveDiagnosis(result);
 
-    ref.invalidate(historyProvider);
     ref.invalidate(homeStatsProvider);
 
     if (!mounted) return;
